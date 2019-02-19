@@ -107,6 +107,10 @@
             if ( equalf(v , 0.0)) s = 0.0;
             else s = delta / v;
             
+	    if(h<0)
+	    {
+	    	h=h+6;
+	    }
             float3 hsv;
             hsv[0] = h;
             hsv[1] = s;
