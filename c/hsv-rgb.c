@@ -114,7 +114,10 @@ vec3 RGB2HSV(vec4 color) {
     //S(saturation) scale from 0 to 1
     if ( equalf(v , 0.0)) s = 0.0;
     else s = delta / v;
-    
+    if(h<0)
+    {
+        h=h+6;
+    }
     vec3 hsv;
     hsv.x = h;
     hsv.y = s;
