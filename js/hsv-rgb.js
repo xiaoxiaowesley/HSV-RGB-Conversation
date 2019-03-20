@@ -65,8 +65,8 @@ function RGB2HSV(color) {
     var g = color.g;
     var b = color.b;
 
-    var M = max(max(r, g), b);
-    var m = min(min(r, g), b);
+    var M = Math.max(Math.max(r, g), b);
+    var m = Math.min(Math.min(r, g), b);
     var delta = M - m;
 
     var h = 0.0;
